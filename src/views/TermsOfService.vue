@@ -1,9 +1,10 @@
 <template>
-  <div>
+  <div class="text-section">
     <h1>利用規約</h1>
     <div>
       この利用規約（以下，「本規約」といいます。）は，清水智貴（以下，「開発者」といいます。）がこのウェブサイト上で提供するサービス（以下，「本サービス」といいます。）の利用条件を定めるものです。登録ユーザーの皆さま（以下，「ユーザー」といいます。）には，本規約に従って，本サービスをご利用いただきます。
     </div>
+    <br />
 
     <h2>第1条（適用）</h2>
     <ol>
@@ -48,7 +49,6 @@
     </ol>
 
     <h2>第4条（禁止事項）</h2>
-
     <div>
       ユーザーは，本サービスの利用にあたり，以下の行為をしてはなりません。
     </div>
@@ -219,4 +219,11 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.text-section {
+  text-align: left;
+  margin: 50px;
+  padding: 30px;
+  background-color: rgb(245, 241, 241);
+}
+</style>
