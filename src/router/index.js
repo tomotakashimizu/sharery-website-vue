@@ -2,8 +2,8 @@ import Vue from "vue"
 import VueRouter from "vue-router"
 import Home from "../views/Home.vue"
 import About from "../views/About.vue"
-import TermsOfService from "../views/TermsOfService"
-import PrivacyPolicy from "../views/PrivacyPolicy"
+import TermsOfService from "../views/TermsOfService.vue"
+import PrivacyPolicy from "../views/PrivacyPolicy.vue"
 
 Vue.use(VueRouter)
 
@@ -24,7 +24,7 @@ const routes = [
     component: TermsOfService,
   },
   {
-    path: "privacy-policy",
+    path: "/privacy-policy",
     name: "PrivacyPolicy",
     component: PrivacyPolicy,
   },
