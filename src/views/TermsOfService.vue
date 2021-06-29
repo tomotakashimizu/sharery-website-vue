@@ -218,11 +218,18 @@
         <div>以上</div>
       </div>
     </b-container>
+    <ScrollTop />
   </div>
 </template>
 
 <script>
-export default {}
+import ScrollTop from "../components/ScrollTop.vue"
+
+export default {
+  components: {
+    ScrollTop,
+  },
+}
 </script>
 
 <style scoped>
