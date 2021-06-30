@@ -2,12 +2,9 @@
   <div>
     <transition>
       <div v-show="visible">
-        <div class="page-button" v-on:click="scrollTopSmooth">
-          <i class="fas fa-chevron-up page-button-icon"></i>
-        </div>
+        <a class="arrow circle-frame" v-on:click="scrollTopSmooth"></a>
       </div>
     </transition>
-    <a href="#" class="arrow circle-frame"></a>
   </div>
 </template>
 
@@ -49,21 +46,20 @@ export default {
 
 <style scoped>
 .arrow {
-  position: relative;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
   display: inline-block;
   padding: 0 0 0 16px;
-  color: #000;
   vertical-align: middle;
   text-decoration: none;
   font-size: 15px;
 }
 .arrow::before,
 .arrow::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
   content: "";
   vertical-align: middle;
 }
@@ -77,8 +73,9 @@ export default {
   background-color: #fff;
 }
 .circle-frame::after {
-  top: 10px;
-  left: 15px;
+  position: fixed;
+  right: 40px;
+  bottom: 35px;
   width: 20px;
   height: 20px;
   border-top: 3px solid #7a0;
@@ -103,20 +100,4 @@ export default {
   transition: opacity 1s;
 }
 /* ヘッダーロゴ フェード処理ここまで */
-
-.page-button {
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  width: 50px;
-  height: 50px;
-  line-height: 32px;
-  text-align: center;
-  border-radius: 50%;
-  background: #5bc8ac;
-}
-.page-button-icon {
-  color: #fff;
-  font-size: 16px;
-}
 </style>
