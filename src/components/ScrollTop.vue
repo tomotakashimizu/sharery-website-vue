@@ -51,16 +51,13 @@ export default {
 .v-enter {
   opacity: 0;
 }
-
 .v-enter-active,
 .v-leave-active {
   transition: opacity 1s;
 }
-
 .v-enter-to {
   opacity: 1;
 }
-
 .v-leave-to {
   opacity: 0;
   transition: opacity 1s;
@@ -69,10 +66,10 @@ export default {
 
 .page-button {
   position: fixed;
-  right: 14px;
-  bottom: 14px;
-  width: 32px;
-  height: 32px;
+  right: 25px;
+  bottom: 25px;
+  width: 50px;
+  height: 50px;
   line-height: 32px;
   text-align: center;
   border-radius: 50%;
