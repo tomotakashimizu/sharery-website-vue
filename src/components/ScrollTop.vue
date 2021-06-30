@@ -7,6 +7,7 @@
         </div>
       </div>
     </transition>
+    <a href="#" class="arrow circle-frame"></a>
   </div>
 </template>
 
@@ -47,6 +48,45 @@ export default {
 </script>
 
 <style scoped>
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 16px;
+  color: #000;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 15px;
+}
+.arrow::before,
+.arrow::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  content: "";
+  vertical-align: middle;
+}
+.circle-frame::before {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #7a0;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.circle-frame::after {
+  top: 10px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid #7a0;
+  border-right: 3px solid #7a0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 /* ヘッダーロゴ フェード処理ここから */
 .v-enter {
   opacity: 0;
