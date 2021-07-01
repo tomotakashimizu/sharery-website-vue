@@ -2,7 +2,7 @@
   <div>
     <transition>
       <div v-show="visible">
-        <a class="arrow circle-frame" v-on:click="scrollTopSmooth"></a>
+        <a class="arrow arrow-circle-frame" v-on:click="scrollTopSmooth"></a>
       </div>
     </transition>
   </div>
@@ -63,7 +63,7 @@ export default {
   content: "";
   vertical-align: middle;
 }
-.circle-frame::before {
+.arrow-circle-frame::before {
   box-sizing: border-box;
   width: 50px;
   height: 50px;
@@ -72,7 +72,7 @@ export default {
   border-radius: 50%;
   background-color: #fff;
 }
-.circle-frame::after {
+.arrow-circle-frame::after {
   position: fixed;
   right: 40px;
   bottom: 35px;
