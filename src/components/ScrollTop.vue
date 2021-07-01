@@ -48,6 +48,7 @@ export default {
 </script>
 
 <style scoped>
+/* 矢印アイコン（正円枠） */
 .arrow-base {
   position: fixed;
   right: 25px;
@@ -86,6 +87,7 @@ export default {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+/* 矢印アイコン（正円枠） */
 
 /* ヘッダーロゴ フェード処理ここから */
 .v-enter {
