@@ -1,11 +1,17 @@
 <template>
   <div>
     <footer class="black-section" id="footer">
-      <div class="container-fluid">
-        <router-link to="/terms-of-service">利用規約</router-link>
+      <div class="container-fluid white-letter">
+        <router-link to="/terms-of-service" class="white-letter none-underline">
+          利用規約
+        </router-link>
         <span>｜</span>
-        <router-link to="/privacy-policy">プライバシーポリシー</router-link>
-        <p class="white-letter">© 2020 Sharery</p>
+        <router-link to="/privacy-policy" class="white-letter none-underline">
+          プライバシーポリシー
+        </router-link>
+        <br />
+        <br />
+        <p>© 2020 Sharery</p>
       </div>
     </footer>
   </div>
@@ -26,5 +32,9 @@ export default {}
 
 .white-letter {
   color: #fff;
+}
+
+.none-underline {
+  text-decoration: none;
 }
 </style>
