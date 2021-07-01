@@ -75,10 +75,10 @@ a:hover {
   box-sizing: border-box;
   width: 50px;
   height: 50px;
-  border: 3px solid #7a0;
+  border: 3px solid #222;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: yellow;
 }
 .arrow-circle-frame::after {
   position: fixed;
@@ -86,12 +86,35 @@ a:hover {
   bottom: 35px;
   width: 20px;
   height: 20px;
-  border-top: 3px solid #7a0;
-  border-right: 3px solid #7a0;
+  border-top: 3px solid #222;
+  border-right: 3px solid #222;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 /* 矢印アイコン（正円枠） */
+
+/* hover: 矢印アイコン（正円枠） */
+.arrow-circle-frame:hover::before {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #222;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #222;
+}
+.arrow-circle-frame:hover::after {
+  position: fixed;
+  right: 40px;
+  bottom: 35px;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid yellow;
+  border-right: 3px solid yellow;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* hover: 矢印アイコン（正円枠） */
 
 /* 矢印アイコン（正円枠）ボタン フェード処理ここから */
 .v-enter {
