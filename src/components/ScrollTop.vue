@@ -2,7 +2,10 @@
   <div>
     <transition>
       <div v-show="visible">
-        <a class="arrow arrow-circle-frame" v-on:click="scrollTopSmooth"></a>
+        <a
+          class="arrow-base arrow-circle-frame"
+          v-on:click="scrollTopSmooth"
+        ></a>
       </div>
     </transition>
   </div>
@@ -45,7 +48,7 @@ export default {
 </script>
 
 <style scoped>
-.arrow {
+.arrow-base {
   position: fixed;
   right: 25px;
   bottom: 25px;
@@ -55,8 +58,8 @@ export default {
   text-decoration: none;
   font-size: 15px;
 }
-.arrow::before,
-.arrow::after {
+.arrow-base::before,
+.arrow-base::after {
   position: fixed;
   right: 25px;
   bottom: 25px;
