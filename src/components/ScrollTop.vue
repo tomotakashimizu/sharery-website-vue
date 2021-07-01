@@ -48,6 +48,10 @@ export default {
 </script>
 
 <style scoped>
+a:hover {
+  cursor: pointer;
+}
+
 /* 矢印アイコン（正円枠） */
 .arrow-base {
   position: fixed;
