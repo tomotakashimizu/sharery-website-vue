@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-container fluid="md">
-      <div class="text-section">
+      <div class="text-section round-shadow">
         <h1>プライバシーポリシー</h1>
         <div>
           清水智貴（以下，「開発者」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）におけるプライバシー情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。
@@ -156,6 +156,11 @@ h2 {
   margin-bottom: 20px;
   padding: 30px;
   background-color: rgb(245, 241, 241);
+}
+
+.round-shadow {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3); /* 影指定 */
+  border-radius: 3px; /* 角丸指定 */
 }
 
 ol {
