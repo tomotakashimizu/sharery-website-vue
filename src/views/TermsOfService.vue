@@ -223,9 +223,10 @@
 </template>
 
 <script>
-import ScrollTop from "../components/ScrollTop.vue"
+import ScrollTop from "@/components/ScrollTop.vue"
 
 export default {
+  name: "TermsOfService",
   components: {
     ScrollTop,
   },

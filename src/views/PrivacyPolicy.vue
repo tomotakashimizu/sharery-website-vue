@@ -127,8 +127,20 @@
         <div>以上</div>
       </div>
     </b-container>
+    <ScrollTop />
   </div>
 </template>
+
+<script>
+import ScrollTop from "@/components/ScrollTop.vue"
+
+export default {
+  name: "PrivacyPolicy",
+  components: {
+    ScrollTop,
+  },
+}
+</script>
 
 <style scoped>
 h1 {

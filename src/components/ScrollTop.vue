@@ -23,6 +23,7 @@ export default {
     this.scrollTopInstant()
   },
   methods: {
+    // スクロールの位置によってボタンの visible を変更する
     handleScroll() {
       this.scrollY = window.scrollY
       if (!this.visible) {
@@ -31,12 +32,16 @@ export default {
         this.visible = !this.visible
       }
     },
+
+    // スムーズにページのトップにスクロールする
     scrollTopSmooth() {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       })
     },
+
+    // 一瞬でページのトップにスクロールする
     scrollTopInstant() {
       window.scrollTo({
         top: 0,
