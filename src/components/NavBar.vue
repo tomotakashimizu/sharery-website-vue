@@ -10,7 +10,7 @@
 
 <style scoped>
 .nav__bar {
-  height: 50px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -33,12 +33,13 @@
 }
 .nav__logo {
   width: 130px;
+  font-size: 25px;
 }
 .nav__items {
   display: flex;
 }
 .nav__item {
   width: 100px;
-  border-left: 1px solid #eee;
+  /* border-left: 1px solid #eee; */
 }
 </style>
