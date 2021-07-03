@@ -146,12 +146,13 @@ export default {
 h1 {
   color: #000;
   margin-bottom: 20px;
+  font-weight: bold;
 }
-
 h2 {
   color: #000;
   margin-top: 70px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .text-section {
@@ -161,7 +162,6 @@ h2 {
   padding: 30px;
   background-color: #fff;
 }
-
 .round-shadow {
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3); /* 影指定 */
   border-radius: 7px; /* 角丸指定 */
@@ -171,13 +171,11 @@ h2 {
 ol {
   margin-left: 3px; /* サイトに合せて調整 */
 }
-
 ol li {
   list-style-type: none;
   counter-increment: cnt;
   position: relative;
 }
-
 ol li:before {
   content: "(" counter(cnt) ")";
   display: inline-block;

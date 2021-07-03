@@ -2,11 +2,11 @@
   <div>
     <footer class="black-section" id="footer">
       <div class="container-fluid white-letter">
-        <router-link to="/terms-of-service" class="white-letter none-underline">
+        <router-link to="/terms-of-service" class="footer__link-letter">
           利用規約
         </router-link>
         <span>｜</span>
-        <router-link to="/privacy-policy" class="white-letter none-underline">
+        <router-link to="/privacy-policy" class="footer__link-letter">
           プライバシーポリシー
         </router-link>
         <br />
@@ -17,10 +17,6 @@
   </div>
 </template>
 
-<script>
-export default {}
-</script>
-
 <style scoped>
 .container-fluid {
   padding: 7% 15%;
@@ -30,11 +26,15 @@ export default {}
   background-color: #000;
 }
 
-.white-letter {
+.footer__link-letter {
   color: #fff;
+  text-decoration: none;
+}
+.footer__link-letter:hover {
+  color: yellow;
 }
 
-.none-underline {
-  text-decoration: none;
+.white-letter {
+  color: #fff;
 }
 </style>
