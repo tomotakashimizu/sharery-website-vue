@@ -146,11 +146,13 @@ export default {
 h1 {
   color: #000;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 h2 {
   color: #000;
   margin-top: 70px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .text-section {
