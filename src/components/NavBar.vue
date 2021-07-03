@@ -1,7 +1,14 @@
 <template>
   <div class="nav__bar">
     <!-- router-link の仕事は URL を書きかえることだけ -->
-    <router-link to="/" class="nav__logo nav__link">Sharery</router-link>
+    <router-link to="/" class="nav__logo nav__link">
+      <img
+        src="../assets/sharery_icon.jpeg"
+        alt="Sharery icon"
+        class="nav__image"
+      />
+      <span class="nav__title">Sharery</span>
+    </router-link>
     <div class="nav__items">
       <router-link to="/about" class="nav__item nav__link">About</router-link>
     </div>
@@ -10,7 +17,7 @@
 
 <style scoped>
 .nav__bar {
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -32,7 +39,7 @@
   color: #fff;
 }
 .nav__logo {
-  width: 130px;
+  width: 210px;
   font-size: 25px;
 }
 .nav__items {
@@ -41,5 +48,14 @@
 .nav__item {
   width: 100px;
   /* border-left: 1px solid #eee; */
+}
+
+.nav__title {
+  color: yellow;
+  margin: 10px;
+}
+.nav__image {
+  width: 35px;
+  height: 35px;
 }
 </style>
