@@ -3,7 +3,7 @@
     <!-- router-link の仕事は URL を書きかえることだけ -->
     <router-link to="/" class="nav__logo nav__link">
       <img
-        src="../assets/sharery_icon.jpeg"
+        src="../assets/sharery_icon.png"
         alt="Sharery icon"
         class="nav__image"
       />
