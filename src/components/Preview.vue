@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      alt="Vue logo"
+      alt="Preview"
       src="../assets/previews/iPhone12ProMax_01.jpeg"
       class="preview-image"
     />
