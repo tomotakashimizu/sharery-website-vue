@@ -1,15 +1,18 @@
 <template>
   <div>
-    <img
-      alt="Preview"
-      src="../assets/previews/iPhone12ProMax_01.jpeg"
-      class="preview-image"
-    />
+    <img alt="Preview" v-bind:src="imageUrl" class="preview-image" />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    imageUrl: {
+      type: String,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style scoped>
