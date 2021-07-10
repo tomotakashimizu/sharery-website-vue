@@ -17,7 +17,7 @@
 .download-image {
   width: 170px;
   max-width: 100%;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 </style>

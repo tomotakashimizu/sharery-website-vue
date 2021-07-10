@@ -1,6 +1,9 @@
 <template>
   <div class="home">
     <Preview imageUrl="./previews/iPhone12ProMax_01.jpeg" />
+    <div class="white-section">
+      <img src="../assets/sharery_icon.png" alt="sharery icon" class="icon" />
+    </div>
     <DownloadButton />
     <Preview imageUrl="./previews/iPhone12ProMax_02.jpeg" />
     <Preview imageUrl="./previews/iPhone12ProMax_03.jpeg" />
@@ -31,3 +34,15 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.icon {
+  height: 100px;
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.white-section {
+  background-color: white;
+}
+</style>
