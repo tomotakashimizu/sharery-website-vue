@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Preview imageUrl="./previews/iPhone12ProMax_01.jpeg" />
-    <div class="white-section">
+    <div>
       <img src="../assets/sharery_icon.png" alt="sharery icon" class="icon" />
     </div>
     <DownloadButton />
@@ -41,8 +41,5 @@ export default {
   width: 100px;
   margin-top: 30px;
   margin-bottom: 10px;
-}
-.white-section {
-  background-color: white;
 }
 </style>

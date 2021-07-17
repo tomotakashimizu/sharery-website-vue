@@ -1,5 +1,5 @@
 <template>
-  <div class="white-section">
+  <div>
     <a href="https://apps.apple.com/jp/app/sharery/id1520408589">
       <img
         class="download-image"
@@ -11,9 +11,6 @@
 </template>
 
 <style scoped>
-.white-section {
-  background-color: white;
-}
 .download-image {
   width: 170px;
   max-width: 100%;
