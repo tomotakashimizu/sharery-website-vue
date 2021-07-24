@@ -11,7 +11,6 @@
     </router-link>
     <div class="nav__items">
       <DownloadButton buttonSize="small" class="download-image" />
-      <router-link to="/about" class="nav__item nav__link">About</router-link>
     </div>
   </div>
 </template>
@@ -56,10 +55,6 @@ export default {
 }
 .nav__items {
   display: flex;
-}
-.nav__item {
-  width: 100px;
-  /* border-left: 1px solid #eee; */
 }
 
 .nav__title {
