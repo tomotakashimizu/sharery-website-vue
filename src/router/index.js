@@ -11,6 +11,7 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: { title: "ページタイトル", desc: "ディスクリプションを記述" },
   },
   {
     path: "/terms-of-service",

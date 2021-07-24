@@ -16,6 +16,39 @@ export default {
     NavBar,
     Footer,
   },
+  mounted: function () {
+    var routeInstance = this.$route
+    this.createTitleDesc(routeInstance)
+  },
+  watch: {
+    $route(routeInstance) {
+      this.createTitleDesc(routeInstance)
+    },
+  },
+  methods: {
+    //routerで設定した title と metaタグ を反映する
+    createTitleDesc(routeInstance) {
+      // title を設定
+      if (routeInstance.meta.title) {
+        var setTitle = routeInstance.meta.title + " | Sharery"
+        document.title = setTitle
+      } else {
+        document.title = "title is not set"
+      }
+
+      // metaタグdescription設定
+      if (routeInstance.meta.desc) {
+        var setDesc = routeInstance.meta.desc + " | Sharery"
+        document
+          .querySelector("meta[name='description']")
+          .setAttribute("content", setDesc)
+      } else {
+        document
+          .querySelector("meta[name='description']")
+          .setAttribute("content", "description is not set")
+      }
+    },
+  },
 }
 </script>
 
