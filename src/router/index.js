@@ -20,11 +20,19 @@ const routes = [
     path: "/terms-of-service",
     name: "TermsOfService",
     component: TermsOfService,
+    meta: {
+      title: "利用規約 | Sharery (シェアリー)",
+      desc: "Sharery (シェアリー) の公式サイトです。Shareryは友達や恋人、家族と日記をシェアできます。現在iPhone、iPadでご利用になれます。",
+    },
   },
   {
     path: "/privacy-policy",
     name: "PrivacyPolicy",
     component: PrivacyPolicy,
+    meta: {
+      title: "プライバシーポリシー | Sharery (シェアリー)",
+      desc: "Sharery (シェアリー) の公式サイトです。Shareryは友達や恋人、家族と日記をシェアできます。現在iPhone、iPadでご利用になれます。",
+    },
   },
 ]
 
