@@ -38,7 +38,7 @@ export default {
 }
 
 .black-section {
-  background-color: #000;
+  background-color: #111;
 }
 
 .footer__link-letter {
