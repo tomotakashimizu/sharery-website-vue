@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .preview-section {
-  margin: 10px;
+  margin: 50px 10px;
 }
 .preview-image {
   /* width: 1000px; */
