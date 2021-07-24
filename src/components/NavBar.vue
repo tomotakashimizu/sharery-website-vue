@@ -1,7 +1,10 @@
 <template>
   <div class="nav__bar">
     <!-- router-link の仕事は URL を書きかえることだけ -->
+
+    <!-- Homeへリンク -->
     <router-link to="/" class="nav__logo nav__link">
+      <!-- アイコン -->
       <img
         src="../assets/sharery_icon.png"
         alt="Sharery icon"
@@ -9,6 +12,7 @@
       />
       <span class="nav__title">Sharery</span>
     </router-link>
+
     <div class="nav__items">
       <DownloadButton buttonSize="small" class="download-image" />
     </div>
