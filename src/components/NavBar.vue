@@ -66,8 +66,8 @@ export default {
   margin: 10px;
 }
 .nav__image {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
 }
 
 .download-image {

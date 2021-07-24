@@ -58,9 +58,8 @@ export default {
 }
 
 .icon {
-  height: 100px;
-  width: 100px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  height: 130px;
+  width: 130px;
+  margin: 30px 0;
 }
 </style>

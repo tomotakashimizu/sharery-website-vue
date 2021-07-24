@@ -39,9 +39,8 @@ export default {
 
 <style scoped>
 .icon {
-  height: 100px;
-  width: 100px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  height: 150px;
+  width: 150px;
+  margin: 30px 0px;
 }
 </style>
