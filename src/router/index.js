@@ -11,7 +11,10 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
-    meta: { title: "ページタイトル", desc: "ディスクリプションを記述" },
+    meta: {
+      title: "Sharery (シェアリー) 公式サイト",
+      desc: "Sharery (シェアリー) の公式サイトです。Shareryは友達や恋人、家族と日記をシェアできます。現在iPhone、iPadでご利用になれます。",
+    },
   },
   {
     path: "/terms-of-service",

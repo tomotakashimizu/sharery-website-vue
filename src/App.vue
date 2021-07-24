@@ -30,22 +30,24 @@ export default {
     createTitleDesc(routeInstance) {
       // title を設定
       if (routeInstance.meta.title) {
-        var setTitle = routeInstance.meta.title + " | Sharery"
+        var setTitle = routeInstance.meta.title
         document.title = setTitle
       } else {
-        document.title = "title is not set"
+        document.title = "Sharery"
       }
 
       // metaタグdescription設定
       if (routeInstance.meta.desc) {
-        var setDesc = routeInstance.meta.desc + " | Sharery"
+        var setDesc =
+          routeInstance.meta.desc +
+          " | Sharery (シェアリー) で日記をシェアしよう。"
         document
           .querySelector("meta[name='description']")
           .setAttribute("content", setDesc)
       } else {
         document
           .querySelector("meta[name='description']")
-          .setAttribute("content", "description is not set")
+          .setAttribute("content", "ShareryはiOSアプリです。")
       }
     },
   },
