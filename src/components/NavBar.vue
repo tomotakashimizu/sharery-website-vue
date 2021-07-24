@@ -1,7 +1,10 @@
 <template>
   <div class="nav__bar">
     <!-- router-link の仕事は URL を書きかえることだけ -->
+
+    <!-- Homeへリンク -->
     <router-link to="/" class="nav__logo nav__link">
+      <!-- アイコン -->
       <img
         src="../assets/sharery_icon.png"
         alt="Sharery icon"
@@ -9,9 +12,9 @@
       />
       <span class="nav__title">Sharery</span>
     </router-link>
+
     <div class="nav__items">
       <DownloadButton buttonSize="small" class="download-image" />
-      <router-link to="/about" class="nav__item nav__link">About</router-link>
     </div>
   </div>
 </template>
@@ -56,10 +59,6 @@ export default {
 }
 .nav__items {
   display: flex;
-}
-.nav__item {
-  width: 100px;
-  /* border-left: 1px solid #eee; */
 }
 
 .nav__title {

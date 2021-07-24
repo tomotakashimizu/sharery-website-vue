@@ -1,10 +1,14 @@
 <template>
   <div>
     <footer class="black-section" id="footer">
+      <!-- アイコン -->
       <div>
         <img src="../assets/sharery_icon.png" alt="sharery icon" class="icon" />
       </div>
+
+      <!-- ダウンロードボタン -->
       <DownloadButton buttonSize="medium" />
+
       <div class="container-fluid white-letter">
         <router-link to="/terms-of-service" class="footer__link-letter">
           利用規約
