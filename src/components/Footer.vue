@@ -4,7 +4,7 @@
       <div>
         <img src="../assets/sharery_icon.png" alt="sharery icon" class="icon" />
       </div>
-      <DownloadButton />
+      <DownloadButton buttonSize="medium" />
       <div class="container-fluid white-letter">
         <router-link to="/terms-of-service" class="footer__link-letter">
           利用規約

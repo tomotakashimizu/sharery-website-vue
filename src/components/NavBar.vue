@@ -10,14 +10,26 @@
       <span class="nav__title">Sharery</span>
     </router-link>
     <div class="nav__items">
+      <DownloadButton buttonSize="small" class="download-image" />
       <router-link to="/about" class="nav__item nav__link">About</router-link>
     </div>
   </div>
 </template>
 
+<script>
+import DownloadButton from "./DownloadButton.vue"
+
+export default {
+  name: "NavBar",
+  components: {
+    DownloadButton,
+  },
+}
+</script>
+
 <style scoped>
 .nav__bar {
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -57,5 +69,9 @@
 .nav__image {
   width: 35px;
   height: 35px;
+}
+
+.download-image {
+  margin: 30px 20px;
 }
 </style>
