@@ -1,27 +1,42 @@
 <template>
   <div class="nav__bar">
     <!-- router-link の仕事は URL を書きかえることだけ -->
+
+    <!-- Homeへリンク -->
     <router-link to="/" class="nav__logo nav__link">
+      <!-- アイコン -->
       <img
-        src="../assets/sharery_icon.jpeg"
+        src="../assets/sharery_icon.png"
         alt="Sharery icon"
         class="nav__image"
       />
       <span class="nav__title">Sharery</span>
     </router-link>
+
     <div class="nav__items">
-      <router-link to="/about" class="nav__item nav__link">About</router-link>
+      <DownloadButton buttonSize="small" class="download-image" />
     </div>
   </div>
 </template>
 
+<script>
+import DownloadButton from "./DownloadButton.vue"
+
+export default {
+  name: "NavBar",
+  components: {
+    DownloadButton,
+  },
+}
+</script>
+
 <style scoped>
 .nav__bar {
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  background-color: black;
+  background-color: #111;
 }
 .nav__link {
   display: flex;
@@ -45,17 +60,17 @@
 .nav__items {
   display: flex;
 }
-.nav__item {
-  width: 100px;
-  /* border-left: 1px solid #eee; */
-}
 
 .nav__title {
   color: yellow;
   margin: 10px;
 }
 .nav__image {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
+}
+
+.download-image {
+  margin: 30px 20px;
 }
 </style>

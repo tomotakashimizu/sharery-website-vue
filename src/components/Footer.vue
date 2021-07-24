@@ -1,6 +1,14 @@
 <template>
   <div>
     <footer class="black-section" id="footer">
+      <!-- アイコン -->
+      <div>
+        <img src="../assets/sharery_icon.png" alt="sharery icon" class="icon" />
+      </div>
+
+      <!-- ダウンロードボタン -->
+      <DownloadButton buttonSize="medium" />
+
       <div class="container-fluid white-letter">
         <router-link to="/terms-of-service" class="footer__link-letter">
           利用規約
@@ -17,13 +25,24 @@
   </div>
 </template>
 
+<script>
+import DownloadButton from "./DownloadButton.vue"
+
+export default {
+  name: "Footer",
+  components: {
+    DownloadButton,
+  },
+}
+</script>
+
 <style scoped>
 .container-fluid {
   padding: 7% 15%;
 }
 
 .black-section {
-  background-color: #000;
+  background-color: #111;
 }
 
 .footer__link-letter {
@@ -36,5 +55,11 @@
 
 .white-letter {
   color: #fff;
+}
+
+.icon {
+  height: 130px;
+  width: 130px;
+  margin: 30px 0;
 }
 </style>
