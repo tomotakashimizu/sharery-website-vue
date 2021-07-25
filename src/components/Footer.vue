@@ -19,7 +19,7 @@
         </router-link>
         <br />
         <br />
-        <p>© 2020 Sharery</p>
+        <p>© 2020 Tomotaka Shimizu</p>
       </div>
     </footer>
   </div>
