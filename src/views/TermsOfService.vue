@@ -212,6 +212,8 @@
         <br />
 
         <div class="right">以上</div>
+        <div class="right">2020年6月29日制定</div>
+        <br />
       </div>
     </b-container>
     <ScrollTop />
