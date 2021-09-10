@@ -124,7 +124,9 @@
         <br />
         <br />
 
-        <div>以上</div>
+        <div class="right">以上</div>
+        <div class="right">2020年6月29日制定</div>
+        <br />
       </div>
     </b-container>
     <ScrollTop />
@@ -187,4 +189,9 @@ ol li:before {
   left: 0;
 }
 /* かっこ付き番号リスト */
+
+/* 右寄せ */
+.right {
+  text-align: right;
+}
 </style>
