@@ -211,7 +211,7 @@
         <br />
         <br />
 
-        <div>以上</div>
+        <div class="right">以上</div>
       </div>
     </b-container>
     <ScrollTop />
@@ -252,5 +252,9 @@ h2 {
 .round-shadow {
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3); /* 影指定 */
   border-radius: 7px; /* 角丸指定 */
+}
+
+.right {
+  text-align: right;
 }
 </style>
