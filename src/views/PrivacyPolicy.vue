@@ -124,7 +124,7 @@
         <br />
         <br />
 
-        <div>以上</div>
+        <div class="right">以上</div>
       </div>
     </b-container>
     <ScrollTop />
@@ -187,4 +187,8 @@ ol li:before {
   left: 0;
 }
 /* かっこ付き番号リスト */
+
+.right {
+  text-align: right;
+}
 </style>
