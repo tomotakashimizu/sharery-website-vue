@@ -254,6 +254,7 @@ h2 {
   border-radius: 7px; /* 角丸指定 */
 }
 
+/* 右寄せ */
 .right {
   text-align: right;
 }

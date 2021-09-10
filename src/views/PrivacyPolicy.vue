@@ -188,6 +188,7 @@ ol li:before {
 }
 /* かっこ付き番号リスト */
 
+/* 右寄せ */
 .right {
   text-align: right;
 }
