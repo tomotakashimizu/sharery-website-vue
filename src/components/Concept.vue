@@ -1,7 +1,9 @@
 <template>
   <div>
     <br />
-    <h1>Concept</h1>
+    <b-container fluid="md">
+      <h1 class="title">Concept</h1>
+    </b-container>
   </div>
 </template>
 
@@ -9,4 +11,10 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.title {
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+}
+</style>
