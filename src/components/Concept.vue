@@ -1,5 +1,8 @@
 <template>
-  <div></div>
+  <div>
+    <br />
+    <h1>Concept</h1>
+  </div>
 </template>
 
 <script>
