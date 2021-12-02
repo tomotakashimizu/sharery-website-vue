@@ -8,6 +8,8 @@
     <!-- ダウンロードボタン -->
     <DownloadButton buttonSize="large" />
 
+    <Concept />
+
     <!-- スクショ一覧 -->
     <Preview imageUrl="./previews/iPhone12ProMax_02.jpeg" />
     <Preview imageUrl="./previews/iPhone12ProMax_03.jpeg" />
@@ -26,6 +28,7 @@
 import ScrollTop from "@/components/ScrollTop.vue"
 import Preview from "@/components/Preview.vue"
 import DownloadButton from "@/components/DownloadButton.vue"
+import Concept from "@/components/Concept.vue"
 
 export default {
   name: "Home",
@@ -33,6 +36,7 @@ export default {
     ScrollTop,
     Preview,
     DownloadButton,
+    Concept,
   },
 }
 </script>
