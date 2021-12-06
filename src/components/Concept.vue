@@ -54,6 +54,7 @@ export default {}
   text-align: left;
   line-height: 35px;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 span {
   font-weight: bold;
